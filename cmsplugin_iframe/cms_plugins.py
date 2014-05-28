@@ -19,6 +19,7 @@ class IFramePlugin(CMSPluginBase):
         context.update({'iframe':instance,
                         'iframe_width':width,
                         'iframe_height':instance.height,
+                        'iframe_css_unit': instance.css_unit,
                         'placeholder':placeholder})
         return context
 
